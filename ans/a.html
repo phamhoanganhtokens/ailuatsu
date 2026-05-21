@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Tư vấn Pháp lý - AI LUẬT SƯ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        legalNavy: '#002147',
+                        legalBlack: '#1a1a1a',
+                        legalPaper: '#ffffff',
+                        legalBg: '#f4f4f4',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+        }
+        .document-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 60px 80px;
+            position: relative;
+            min-height: 297mm; /* Simulate A4 height */
+        }
+        @media (max-width: 768px) {
+            .document-container {
+                margin: 0;
+                padding: 40px 20px;
+                box-shadow: none;
+            }
+        }
+        .justified-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .legal-border {
+            border-top: 2px solid #002147;
+            margin: 2rem 0;
+        }
+        .section-header {
+            color: #002147;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 4px;
+        }
+        .stamp-placeholder {
+            border: 2px solid #b91c1c;
+            color: #b91c1c;
+            padding: 8px 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: inline-block;
+            transform: rotate(-5deg);
+            opacity: 0.6;
+            margin-bottom: 20px;
+            font-family: 'Outfit', sans-serif;
+            border-radius: 4px;
+        }
+        /* Custom print styling */
+        @media print {
+            body { background: white; margin: 0; }
+            .document-container { margin: 0; box-shadow: none; padding: 0; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="document-container">
+        <!-- Metadata & Branding -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-2xl font-bold tracking-tight text-legalNavy font-sans mb-1">AI LUẬT SƯ</h2>
+                <p class="text-xs text-gray-500 font-sans tracking-widest uppercase">Expert System Intelligence</p>
+                <a href="www.phamhoanganhtokens.com" target="_blank" class="text-sm text-blue-800 underline font-sans">www.phamhoanganhtokens.com</a>
+            </div>
+            
+            <div class="text-right font-sans text-sm text-gray-600">
+                <div class="stamp-placeholder">Official Document</div>
+                <p><strong>Ngày lập báo cáo:</strong> <span id="currentDate">21 tháng 05 năm 2026</span></p>
+                <p><strong>Mã hồ sơ:</strong> <span class="uppercase">REF-AIL-2024-09X2</span></p>
+                <p><strong>Cấp độ bảo mật:</strong> Thông thường</p>
+            </div>
+        </div>
+
+        <!-- Report Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold mb-4 uppercase">BÁO CÁO TƯ VẤN PHÁP LÝ</h1>
+            <p class="text-lg"><strong>Chủ đề:</strong> Thủ tục và điều kiện cấp Giấy chứng nhận cho đất khai hoang từ năm 1995</p>
+            <div class="w-24 h-1 bg-legalNavy mx-auto mt-6"></div>
+        </div>
+
+        <!-- Recipient -->
+        <div class="mb-10 font-bold text-lg">
+            <p>Kính gửi: Quý khách hàng</p>
+            <p>Vai trò: Master AI Lawyer Agent (Luật sư Trưởng Hệ thống AI)</p>
+        </div>
+
+        <!-- Body Content -->
+        <div class="space-y-8 justified-text text-[16px]">
+            
+            <!-- Section 1 -->
+            <section>
+                <h2 class="section-header text-xl">I. TÓM TẮT NỘI DUNG YÊU CẦU (SUMMARY OF INQUIRY)</h2>
+                <p>
+                    Gia đình Quý khách đang sử dụng một diện tích đất có nguồn gốc là đất khai hoang từ năm 1995. Hiện tại, mảnh đất này chưa được cấp Giấy chứng nhận quyền sử dụng đất (GCNQSDĐ - thường gọi là Sổ đỏ). Quý khách mong muốn được tư vấn về điều kiện pháp lý và quy trình cụ thể để hợp thức hóa (cấp Sổ đỏ lần đầu) cho diện tích đất này theo các quy định mới nhất của pháp luật Việt Nam.
+                </p>
+            </section>
+
+            <!-- Section 2 -->
+            <section>
+                <h2 class="section-header text-xl">II. KHUNG PHÁP LÝ ÁP DỤNG (APPLICABLE LEGAL FRAMEWORK)</h2>
+                <p class="mb-4">Dựa trên hiện trạng pháp luật tính đến thời điểm hiện tại, các văn bản quy phạm pháp luật điều chỉnh trực tiếp bao gồm:</p>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li><strong>Luật Đất đai số 31/2024/QH15:</strong> Văn bản quan trọng nhất, mở rộng điều kiện cấp sổ cho đất không có giấy tờ.</li>
+                    <li><strong>Nghị định số 101/2024/NĐ-CP:</strong> Quy định về điều tra cơ bản đất đai; đăng ký, cấp GCNQSDĐ.</li>
+                    <li><strong>Nghị định số 102/2024/NĐ-CP:</strong> Quy định chi tiết thi hành một số điều của Luật Đất đai.</li>
+                    <li><strong>Nghị định số 103/2024/NĐ-CP:</strong> Quy định về tiền sử dụng đất, tiền thuê đất.</li>
+                </ul>
+            </section>
+
+            <!-- Section 3 -->
+            <section>
+                <h2 class="section-header text-xl">III. PHÂN TÍCH PHÁP LÝ CHI TIẾT (DETAILED LEGAL ANALYSIS)</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-bold underline mb-2">3.1. Xác định nhóm đối tượng theo Luật Đất đai 2024</h3>
+                    <p>
+                        Vì gia đình bắt đầu sử dụng đất từ năm 1995, trường hợp này thuộc nhóm <strong>"Đất sử dụng từ ngày 15/10/1993 đến trước ngày 01/07/2014"</strong> quy định tại <strong>Khoản 3 Điều 138 Luật Đất đai 2024</strong>. Đây là một điểm cực kỳ thuận lợi, vì Luật mới đã nới lỏng thời hạn công nhận quyền sử dụng đất so với Luật 2013.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="font-bold underline mb-2">3.2. Điều kiện để được cấp Sổ đỏ đối với đất khai hoang:</h3>
+                    <p class="mb-2">Để được công nhận quyền sử dụng đất, gia đình cần thỏa mãn các điều kiện sau:</p>
+                    <ol class="list-decimal pl-8 space-y-2">
+                        <li><strong>Sử dụng đất ổn định:</strong> Đất được sử dụng liên tục cho một mục đích nhất định từ năm 1995 đến nay.</li>
+                        <li><strong>Không vi phạm pháp luật đất đai:</strong> Không thuộc trường hợp lấn chiếm đất công cộng hoặc đất đã có thông báo thu hồi.</li>
+                        <li><strong>UBND cấp xã xác nhận:</strong> Đây là điều kiện tiên quyết - phải được xác nhận đất <strong>không có tranh chấp</strong>.</li>
+                        <li><strong>Phù hợp quy hoạch:</strong> Diện tích đất xin cấp sổ phải phù hợp với quy hoạch sử dụng đất địa phương.</li>
+                    </ol>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="font-bold underline mb-2">3.3. Nghĩa vụ tài chính (Tiền sử dụng đất):</h3>
+                    <p>Theo Nghị định 103/2024/NĐ-CP, việc cấp sổ sẽ phát sinh nghĩa vụ tài chính bao gồm: Tiền sử dụng đất (theo Bảng giá đất hiện hành), Lệ phí trước bạ (thường là 0.5%), phí thẩm định hồ sơ và phí cấp phôi sổ.</p>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section>
+                <h2 class="section-header text-xl">IV. TIỀN LỆ VÀ ÁN LỆ LIÊN QUAN (RELEVANT PRECEDENTS)</h2>
+                <p>Trong thực tiễn xét xử và giải quyết tranh chấp hành chính tại Việt Nam:</p>
+                <ul class="list-disc pl-8 mt-4 space-y-2">
+                    <li><strong>Sự thừa nhận "Công sức khai phá":</strong> Tòa án thường ưu tiên bảo vệ người trực tiếp canh tác, sử dụng đất lâu dài nếu chứng minh được quá trình đầu tư trên đất.</li>
+                    <li><strong>Giá trị của biên bản lấy ý kiến khu dân cư:</strong> Đối với đất không có giấy tờ, biên bản họp khu dân cư do UBND xã tổ chức là chứng cứ pháp lý cao nhất trong quá trình xác định nguồn gốc đất.</li>
+                </ul>
+            </section>
+
+            <!-- Section 5 -->
+            <section>
+                <h2 class="section-header text-xl">V. KHUYẾN NGHỊ TUÂN THỦ VÀ LỘ TRÌNH THỰC HIỆN</h2>
+                <div class="border border-gray-200 rounded-lg overflow-hidden my-4">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="border-b px-4 py-2 text-left">Giai đoạn</th>
+                                <th class="border-b px-4 py-2 text-left">Hành động cần thiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-b px-4 py-2 font-bold">Bước 1</td>
+                                <td class="border-b px-4 py-2">Thu thập minh chứng sử dụng đất (biên lai thuế, hóa đơn điện/nước từ 1995).</td>
+                            </tr>
+                            <tr>
+                                <td class="border-b px-4 py-2 font-bold">Bước 2</td>
+                                <td class="border-b px-4 py-2">Đo đạc hiện trạng, trích đo thửa đất chuẩn xác để tránh chồng lấn ranh giới.</td>
+                            </tr>
+                            <tr>
+                                <td class="border-b px-4 py-2 font-bold">Bước 3</td>
+                                <td class="border-b px-4 py-2">Nộp hồ sơ tại UBND cấp xã để xác nhận nguồn gốc và niêm yết công khai (15 ngày).</td>
+                            </tr>
+                            <tr>
+                                <td class="border-b px-4 py-2 font-bold">Bước 4</td>
+                                <td class="border-b px-4 py-2">Thực hiện hồ sơ tại Văn phòng Đăng ký đất đai (Bộ phận Một cửa).</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-bold">Bước 5</td>
+                                <td class="px-4 py-2">Hoàn thành nghĩa vụ thuế theo thông báo từ cơ quan thuế để nhận GCN.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="font-bold italic mt-4">Lưu ý đặc biệt: Theo Luật Đất đai 2024, quyền lợi của người sử dụng đất khai hoang đang ở giai đoạn "vàng". Quý khách nên triển khai ngay để tránh rủi ro thay đổi quy hoạch.</p>
+            </section>
+        </div>
+
+        <!-- Closing -->
+        <div class="mt-16 text-right">
+            <p class="italic mb-1">Trân trọng,</p>
+            <p class="font-bold text-xl font-sans tracking-tight">AI LUẬT SƯ</p>
+            <p class="text-sm text-gray-500 font-sans">Hệ thống tư vấn pháp lý thông minh</p>
+        </div>
+
+        <!-- Disclaimer Section -->
+        <div class="mt-20 border-2 border-legalNavy p-6 rounded-sm bg-gray-50">
+            <h4 class="text-sm font-bold uppercase mb-2 font-sans flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                Lưu ý quan trọng (Disclaimer)
+            </h4>
+            <p class="text-xs text-gray-600 font-sans leading-relaxed">
+                Báo cáo này được tạo lập tự động bởi Hệ thống Trí tuệ Nhân tạo "AI LUẬT SƯ". Các thông tin mang tính chất tham khảo và hỗ trợ định hướng pháp lý dựa trên dữ liệu pháp luật hiện hành. Nội dung này không thay thế cho văn bản tư vấn có chữ ký và con dấu của Luật sư thực thụ hoặc quyết định của cơ quan Nhà nước có thẩm quyền. Chúng tôi khuyến nghị Quý khách hàng nên tham vấn ý kiến từ luật sư chuyên môn trước khi thực hiện các giao dịch pháp lý ràng buộc.
+            </p>
+        </div>
+
+        <div class="mt-8 text-center text-xs text-gray-400 font-sans">
+            [Kết thúc báo cáo tư vấn - Mã tài liệu: 2024-AI-LEG-99]
+        </div>
+    </div>
+
+    <script>
+        // Update date to current if needed, though instruction says 2026
+        const dateElement = document.getElementById('currentDate');
+        // dateElement.innerText = new Date().toLocaleDateString('vi-VN', { day: 'numeric', month: 'long', year: 'numeric' });
+    </script>
+</body>
+</html>
 
