@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Tư Vấn Pháp Luật - AI Luật Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
 
+        :root {
+            --legal-navy: #1a237e;
+            --legal-charcoal: #333333;
+            --legal-gold: #c5a059;
+            --page-bg: #f4f4f7;
+        }
+
+        body {
+            background-color: var(--page-bg);
+            font-family: 'Lora', 'Times New Roman', serif;
+            color: var(--legal-charcoal);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .document-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            padding: 60px 80px;
+            position: relative;
+            border-top: 8px solid var(--legal-navy);
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .document-container { padding: 30px 20px; margin: 10px auto; }
+        }
+
+        .justified-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--legal-navy);
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+        }
+
+        .legal-quote {
+            border-left: 3px solid var(--legal-gold);
+            padding-left: 20px;
+            margin: 15px 0;
+            font-style: italic;
+            background: #fdfbf7;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .risk-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 8px;
+        }
+
+        .risk-high { background-color: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+        .risk-medium { background-color: #fff8e1; color: #f57f17; border: 1px solid #ffecb3; }
+        .risk-low { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .branding {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--legal-navy);
+            line-height: 1;
+        }
+
+        .branding-sub {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--legal-gold);
+            margin-top: 4px;
+        }
+
+        .meta-info {
+            text-align: right;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .main-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--legal-navy);
+        }
+
+        .footer-disclaimer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .signature-block {
+            margin-top: 50px;
+            text-align: right;
+        }
+
+        .signature-name {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 40px;
+        }
+        
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 10px; position: relative; padding-left: 20px; }
+        li::before { content: "•"; position: absolute; left: 0; color: var(--legal-gold); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="document-container">
+        <!-- Header Section -->
+        <div class="header-top">
+            <div>
+                <div class="branding">AI LUẬT SƯ</div>
+                <div class="branding-sub">Intelligence & Integrity</div>
+            </div>
+            <div class="meta-info">
+                <div>www.phamhoanganhtokens.com</div>
+                <div id="current-date"></div>
+            </div>
+        </div>
+
+        <h1 class="main-title">THƯ TƯ VẤN PHÁP LUẬT</h1>
+
+        <div class="justified-text">
+            <p class="mb-2"><strong>Kính gửi:</strong> Quý Hộ gia đình/Cá nhân</p>
+            <p><strong>Về việc:</strong> Hợp thức hóa quyền sử dụng đất khai hoang, sử dụng ổn định từ năm 1995.</p>
+        </div>
+
+        <!-- Section I -->
+        <h2 class="section-title">I. Tóm tắt nội dung</h2>
+        <div class="justified-text">
+            <p>Hộ gia đình hiện đang sử dụng một phần đất do khai hoang, sử dụng ổn định từ năm 1995 đến nay nhưng chưa được cấp Giấy chứng nhận quyền sử dụng đất (GCNQSDĐ). Căn cứ theo <strong>Luật Đất đai 2024</strong> (có hiệu lực từ 01/08/2024), trường hợp này hoàn toàn đủ điều kiện để được xem xét cấp GCNQSDĐ lần đầu. Mục tiêu cốt lõi là hoàn tất thủ tục trước ngày <strong>31/12/2025</strong> để tối ưu hóa chi phí tài chính.</p>
+        </div>
+
+        <!-- Section II -->
+        <h2 class="section-title">II. Cơ sở pháp lý</h2>
+        <div class="legal-quote">
+            <ul class="text-sm">
+                <li>Luật Đất đai số 31/2024/QH15 ngày 18/01/2024.</li>
+                <li>Nghị định 101/2024/NĐ-CP về đăng ký đất đai, cấp GCNQSDĐ, quyền sở hữu tài sản gắn liền với đất.</li>
+                <li>Nghị định 102/2024/NĐ-CP quy định chi tiết thi hành một số điều của Luật Đất đai.</li>
+                <li>Nghị định 103/2024/NĐ-CP quy định về tiền sử dụng đất, tiền thuê đất.</li>
+            </ul>
+        </div>
+
+        <!-- Section III -->
+        <h2 class="section-title">III. Phân tích chi tiết</h2>
+        <div class="justified-text">
+            <h3 class="font-bold mt-4 mb-2">1. Điều kiện công nhận quyền sử dụng đất (Điều 138 Luật Đất đai 2024)</h3>
+            <ul class="ml-4">
+                <li><strong>Thời điểm sử dụng:</strong> Đất sử dụng từ năm 1995 thuộc nhóm đối tượng sử dụng đất ổn định từ ngày 15/10/1993 đến trước ngày 01/07/2014.</li>
+                <li><strong>Điều kiện tiên quyết:</strong> Được UBND cấp xã nơi có đất xác nhận là đất không có tranh chấp.</li>
+                <li><strong>Sức mạnh hồ sơ:</strong> Các biên lai nộp thuế từ năm 1995 và bản đồ trích đo địa chính là bằng chứng đắt giá chứng minh quá trình sử dụng đất liên tục, công khai, giúp bác bỏ các lập luận về việc đất do Nhà nước quản lý nhưng không có hoạt động quản lý thực tế.</li>
+            </ul>
+
+            <h3 class="font-bold mt-6 mb-2">2. Nghĩa vụ tài chính (Nghị định 103/2024/NĐ-CP)</h3>
+            <ul class="ml-4">
+                <li><strong>Mức thu:</strong> Vì đất bắt đầu sử dụng từ năm 1995 (giai đoạn 1993 - 2004), khi cấp GCNQSDĐ cho diện tích trong hạn mức đất ở, hộ gia đình phải nộp <strong>50% tiền sử dụng đất</strong> theo giá đất tại thời điểm nộp hồ sơ.</li>
+                <li><strong>Diện tích vượt hạn mức:</strong> Phải nộp 100% tiền sử dụng đất hoặc chuyển sang thuê đất.</li>
+            </ul>
+
+            <h3 class="font-bold mt-6 mb-2">3. Quy trình thực hiện (Nghị định 101/2024/NĐ-CP)</h3>
+            <ul class="ml-4">
+                <li><strong>Bước 1:</strong> Nộp hồ sơ tại Bộ phận một cửa UBND cấp huyện hoặc Chi nhánh Văn phòng đăng ký đất đai.</li>
+                <li><strong>Bước 2:</strong> UBND xã niêm yết công khai (15 ngày) về tình trạng tranh chấp và nguồn gốc đất.</li>
+                <li><strong>Bước 3:</strong> Cơ quan đăng ký đất đai kiểm tra hồ sơ, trích đo địa chính và gửi thông tin sang cơ quan thuế.</li>
+                <li><strong>Bước 4:</strong> Thực hiện nghĩa vụ tài chính và nhận GCNQSDĐ (Thời gian giải quyết không quá 30 ngày làm việc).</li>
+            </ul>
+        </div>
+
+        <!-- Section IV -->
+        <h2 class="section-title">IV. Rủi ro và giải pháp</h2>
+        <div class="justified-text space-y-6">
+            <div>
+                <p class="font-bold flex items-center">
+                    <span class="risk-badge risk-high">Rủi ro Cao</span>
+                    1. Rủi ro về chi phí (Biến động giá đất 2026)
+                </p>
+                <p class="mt-1 ml-4"><span class="italic text-gray-600">Rủi ro:</span> Theo Luật Đất đai 2024, từ 01/01/2026 sẽ bãi bỏ khung giá đất cũ, áp dụng Bảng giá đất mới sát giá thị trường. Dự kiến giá đất sẽ tăng nhiều lần.</p>
+                <p class="mt-1 ml-4"><span class="font-bold text-navy-800">Giải pháp:</span> Quyết liệt thực hiện hồ sơ để nhận thông báo thuế trước ngày 31/12/2025. Đây là "thời điểm vàng" để hưởng mức giá đất cũ.</p>
+            </div>
+
+            <div>
+                <p class="font-bold flex items-center">
+                    <span class="risk-badge risk-medium">Rủi ro Trung bình</span>
+                    2. Rủi ro về xác nhận của địa phương
+                </p>
+                <p class="mt-1 ml-4"><span class="italic text-gray-600">Rủi ro:</span> UBND xã có thể gây khó khăn trong việc xác nhận nguồn gốc hoặc đất nằm trong quy hoạch hành lang an toàn.</p>
+                <p class="mt-1 ml-4"><span class="font-bold text-navy-800">Giải pháp:</span> Sử dụng các biên lai thuế và bản đồ trích đo cũ để đối chiếu. Nếu đất thuộc quy hoạch nhưng sử dụng trước khi quy hoạch công bố, vẫn yêu cầu cấp GCN theo quy định nới lỏng của Luật 2024.</p>
+            </div>
+
+            <div>
+                <p class="font-bold flex items-center">
+                    <span class="risk-badge risk-low">Rủi ro Thấp</span>
+                    3. Rủi ro về tranh chấp ranh giới
+                </p>
+                <p class="mt-1 ml-4"><span class="italic text-gray-600">Rủi ro:</span> Khi đo đạc hoặc niêm yết, hàng xóm có thể khiếu nại về ranh giới.</p>
+                <p class="mt-1 ml-4"><span class="font-bold text-navy-800">Giải pháp:</span> Chủ động hiệp thương với các hộ liền kề, ký giáp ranh trước khi nộp hồ sơ chính thức để tránh việc thủ tục bị đình chỉ.</p>
+            </div>
+        </div>
+
+        <!-- Section V -->
+        <h2 class="section-title">V. Lưu ý quan trọng</h2>
+        <div class="justified-text bg-gray-50 p-6 border border-gray-200">
+            <ul class="space-y-3">
+                <li><strong>Tính cấp bách:</strong> Thời gian từ nay đến cuối năm 2025 không còn nhiều. Bất kỳ sự chậm trễ nào sau mốc 01/01/2026 đều dẫn đến gánh nặng tài chính cực lớn do thay đổi bảng giá đất.</li>
+                <li><strong>Hồ sơ cần chuẩn bị ngay:</strong> Đơn đăng ký (Mẫu 04/ĐK); Toàn bộ bản gốc biên lai thuế từ năm 1995; Bản đồ trích đo; CCCD các thành viên trong hộ gia đình.</li>
+                <li><strong>Cơ chế ghi nợ:</strong> Nếu thuộc đối tượng hộ nghèo, gia đình có công, có thể xin ghi nợ tiền sử dụng đất trên GCN để giảm áp lực tài chính tức thời.</li>
+            </ul>
+        </div>
+
+        <!-- Signature Block -->
+        <div class="signature-block">
+            <p>Trân trọng,</p>
+            <div class="signature-name">AI LUẬT SƯ</div>
+            <p class="text-xs text-gray-500 mt-1 italic">Hệ thống Tư vấn Pháp lý Trực tuyến</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-disclaimer">
+            Văn bản này được tạo ra bởi AI Luật Sư nhằm mục đích cung cấp thông tin tham khảo chuyên sâu. <br>
+            Quý khách vui lòng liên hệ với chuyên viên pháp lý để được hướng dẫn nộp hồ sơ thực tế.
+        </div>
+    </div>
+
+    <script>
+        // Set current date in Vietnamese format
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date();
+        document.getElementById('current-date').innerText = 'Ngày ' + today.toLocaleDateString('vi-VN', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        });
+    </script>
+</body>
+</html>
