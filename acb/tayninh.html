@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Tư Vấn Pháp Luật - AI Luật Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        legalNavy: '#1a237e',
+                        legalCharcoal: '#333333',
+                        legalGold: '#af9552',
+                        legalGrey: '#f5f5f7',
+                        riskHigh: '#c62828',
+                        riskMedium: '#ef6c00',
+                        riskLow: '#2e7d32',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Times New Roman', 'serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none; }
+            .page-container { box-shadow: none; margin: 0; border: none; width: 100% !important; max-width: 100% !important; }
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Cormorant Garamond', serif;
+            color: #333333;
+            -webkit-font-smoothing: antialiased;
+        }
 
+        .page-container {
+            background: #ffffff;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 80px 70px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            line-height: 1.6;
+            min-height: 1200px;
+        }
+
+        .document-title {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .section-header {
+            color: #1a237e;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-left: 4px solid #af9552;
+            padding-left: 12px;
+        }
+
+        p, li {
+            font-size: 1.15rem;
+            text-align: justify;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-citation {
+            background-color: #f8f9fa;
+            border-left: 2px solid #1a237e;
+            padding: 10px 20px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #444;
+        }
+
+        .risk-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 2px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-right: 8px;
+        }
+
+        .media-container {
+            margin: 2rem 0;
+            border: 1px solid #e0e0e0;
+            padding: 5px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .media-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 8rem;
+            color: rgba(26, 35, 126, 0.03);
+            pointer-events: none;
+            z-index: 0;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="page-container relative overflow-hidden">
+        <div class="watermark uppercase font-bold">AI LUẬT SƯ</div>
+
+        <!-- Header -->
+        <header class="relative z-10 flex flex-col md:flex-row justify-between items-start mb-16">
+            <div class="branding">
+                <h2 class="text-2xl font-bold text-legalNavy tracking-tighter">AI LUẬT SƯ</h2>
+                <p class="text-sm text-gray-500 italic">Văn Phòng Tư Vấn Pháp Lý Công Nghệ</p>
+            </div>
+            <div class="contact-info text-right mt-4 md:mt-0 text-sm">
+                <p class="font-semibold">Website: <a href="www.phamhoanganhtokens.com" target="_blank" class="text-legalNavy hover:underline">www.phamhoanganhtokens.com</a></p>
+                <p id="current-date">Ngày: ...</p>
+            </div>
+        </header>
+
+        <!-- Title -->
+        <div class="text-center mb-12 relative z-10">
+            <h1 class="document-title text-2xl md:text-3xl text-legalNavy mb-2">THƯ TƯ VẤN PHÁP LUẬT</h1>
+            <p class="text-gray-600 italic">V/v: Nhận chuyển giao nghĩa vụ trả nợ và chuyển nhượng quyền sử dụng đất đang thế chấp</p>
+        </div>
+
+        <!-- Salutation -->
+        <div class="mb-8 relative z-10">
+            <p><span class="font-bold">Kính gửi:</span> Ông Phạm Hoàng Anh</p>
+            <p><span class="font-bold">Vụ việc:</span> Tư vấn nhận chuyển giao nghĩa vụ trả nợ và chuyển nhượng quyền sử dụng đất đang thế chấp tại Ngân hàng ACB.</p>
+        </div>
+
+        <!-- Main Content -->
+        <main class="relative z-10">
+            
+            <section id="section-1">
+                <h2 class="section-header">1. Tóm tắt vấn đề (Summary)</h2>
+                <p>
+                    Vào năm 2022, em trai ông đã thế chấp quyền sử dụng đất vườn (định giá 5 tỷ VNĐ) tại ngân hàng ACB để vay 3,8 tỷ VNĐ. Hiện tại (năm 2026), em trai mất khả năng thanh toán và muốn ông đứng ra nhận nợ, đồng thời sang tên sổ hồng sang cho ông. Tuy nhiên, ông hiện không có đủ tiền mặt và đang chờ khoản bồi thường từ vụ án lừa đảo tiền ảo ANTEX liên quan đến "Shark Bình" để thanh toán cho ngân hàng.
+                </p>
+            </section>
+
+            <section id="section-2">
+                <h2 class="section-header">2. Cơ sở pháp lý (Legal Basis)</h2>
+                <ul class="list-none pl-4">
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold">Bộ luật Dân sự 2015 (Các quy định về chuyển giao nghĩa vụ dân sự và Thế chấp tài sản).</li>
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold">Luật Đất đai (Quy định về chuyển nhượng quyền sử dụng đất).</li>
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold">Thông tư 39/2016/TT-NHNN của Ngân hàng Nhà nước về hoạt động cho vay cho khách hàng.</li>
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold">Bộ luật Tố tụng Hình sự 2015 (Về bồi thường thiệt hại trong vụ án hình sự).</li>
+                </ul>
+            </section>
+
+            <section id="section-3">
+                <h2 class="section-header">3. Phân tích chi tiết (Analysis)</h2>
+                
+                <h3 class="font-bold text-lg mb-2">3.1 Việc nhận nợ thay và sang tên đất:</h3>
+                <div class="legal-citation">
+                    "Theo Điều 370 Bộ luật Dân sự 2015, việc chuyển giao nghĩa vụ trả nợ chỉ được thực hiện khi có sự đồng ý của ngân hàng ACB."
+                </div>
+                <p>
+                    Ông cần phải chứng minh năng lực tài chính với ACB để họ chấp thuận cho ông trở thành người vay mới. Việc sang tên sổ đỏ khi tài sản đang thế chấp là hoàn toàn có thể thực hiện thông qua quy trình "Sang tên tài sản đang thế chấp" nếu có sự đồng ý bằng văn bản của Ngân hàng. Quy trình này thường được thực hiện đồng thời với việc ký kết lại hợp đồng tín dụng mới.
+                </p>
+
+                <h3 class="font-bold text-lg mb-2 mt-4">3.2 Tính độc lập giữa khoản vay và vụ án hình sự:</h3>
+                <p>
+                    Nghĩa vụ trả nợ cho ACB phát sinh từ Hợp đồng tín dụng đã ký. Đây là quan hệ dân sự độc lập. Việc ông bị lừa đảo trong một vụ án khác (ANTEX) và đang chờ bồi thường không phải là lý do pháp lý để ngân hàng tạm dừng thu nợ hoặc miễn lãi phạt.
+                </p>
+                <p>
+                    Ngân hàng ACB không có nghĩa vụ phải chờ đợi kết quả vụ án "Shark Bình" để xử lý khoản nợ. Nếu quá hạn, họ có quyền phát mãi tài sản để thu hồi nợ.
+                </p>
+            </section>
+
+            <section id="section-4">
+                <h2 class="section-header">4. Rủi ro pháp lý & Biện pháp xử lý (Risks/Remedies)</h2>
+                
+                <div class="mb-6">
+                    <p class="font-bold italic text-red-800 underline decoration-legalGold">Các rủi ro tiềm tàng:</p>
+                    <div class="pl-4 border-l-2 border-gray-100">
+                        <p>
+                            <span class="risk-badge bg-red-100 text-riskHigh">Rủi ro Cao</span>
+                            <strong>Lãi phạt và quá hạn:</strong> Nếu vụ án kéo dài (dự kiến từ 2-5 năm), ông chắc chắn phải chịu lãi suất quá hạn trên nợ gốc (tối đa 150% lãi suất trong hạn) và lãi chậm trả trên lãi (tối đa 10%/năm). Điều này khiến khoản nợ 3,8 tỷ có thể tăng lên rất nhanh, vượt quá giá trị của miếng đất.
+                        </p>
+                        
+                        <div class="media-container">
+                            <img src='https://opal.google/board/blobs/11ffbd1b-8432-4544-a3b3-7cf37431d422' alt='media_1' />
+                            <p class="text-center text-xs text-gray-400 mt-2 italic">Tài liệu đính kèm: Phụ lục định giá tài sản</p>
+                        </div>
+
+                        <p>
+                            <span class="risk-badge bg-orange-100 text-riskMedium">Rủi ro Trung bình</span>
+                            <strong>Rủi ro định giá tài sản:</strong> Theo hồ sơ đính kèm, giá trị thực tế của đất vườn tại Tây Ninh năm 2026 có thể thấp hơn mức định giá năm 2022 (dự kiến khoảng 2 tỷ VNĐ). Nếu ông nhận nợ 3,8 tỷ mà giá trị đất chỉ còn 2 tỷ, ông đang gánh một khoản lỗ thực tế ngay lập tức.
+                        </p>
+                        <p>
+                            <span class="risk-badge bg-green-100 text-riskLow">Rủi ro Thấp</span>
+                            <strong>Nợ xấu (CIC):</strong> Nếu không thanh toán đúng hạn, ông sẽ bị ghi nhận nợ xấu nhóm 3-5 trên hệ thống tín dụng quốc gia, ảnh hưởng đến khả năng vay vốn sau này.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">Giải pháp gợi ý:</h3>
+                <ul class="list-none pl-4">
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold"><strong>Định giá lại tài sản:</strong> Ông cần thuê đơn vị định giá độc lập để xem giá trị thực tế của miếng đất hiện nay là bao nhiêu trước khi quyết định nhận nợ.</li>
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold"><strong>Đàm phán với ACB:</strong> Yêu cầu ngân hàng thực hiện "Cơ cấu lại thời hạn trả nợ" theo các quy định hỗ trợ của Ngân hàng Nhà nước để kéo dài thời gian thanh toán nợ gốc, tránh bị đưa vào diện nợ xấu ngay lập tức.</li>
+                    <li class="relative before:content-['•'] before:absolute before:-left-4 before:text-legalGold"><strong>Thủ tục nạn nhân:</strong> Liên hệ với PC03 Công an Hà Nội để đảm bảo ông có tên trong danh sách nhận bồi thường của vụ án ANTEX khi có bản án cuối cùng.</li>
+                </ul>
+            </section>
+
+            <section id="section-5">
+                <h2 class="section-header">5. Lưu ý quan trọng (Notes/Disclaimer)</h2>
+                <p class="italic text-gray-700 bg-gray-50 p-4 border-l-4 border-legalNavy">
+                    Việc chờ đợi bồi thường từ vụ án hình sự lừa đảo thường rất mất thời gian và số tiền nhận lại thực tế thường thấp hơn nhiều so với số tiền bị mất (phụ thuộc vào số tài sản thực tế kê biên được của bị cáo). Ông không nên coi khoản bồi thường này là nguồn trả nợ duy nhất và chắc chắn cho ngân hàng ACB.
+                </p>
+            </section>
+
+            <!-- Closing -->
+            <div class="mt-16 flex flex-col items-end">
+                <p class="text-lg">Trân trọng,</p>
+                <div class="mt-4 text-center">
+                    <p class="font-bold text-xl text-legalNavy">AI LUẬT SƯ</p>
+                    <div class="h-1 w-24 bg-legalGold mx-auto mt-1"></div>
+                    <p class="text-xs text-gray-400 mt-2 tracking-widest">HỆ THỐNG PHÁP LÝ TỰ ĐỘNG</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Note -->
+        <footer class="mt-20 pt-4 border-t border-gray-200">
+            <p class="text-[10pt] text-gray-500 text-center uppercase tracking-wider">
+                Tài liệu này chỉ mang tính chất tham khảo chuyên môn. Để thực hiện các thủ tục tố tụng, vui lòng liên hệ trực tiếp với cơ quan có thẩm quyền.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current date in Vietnamese format
+        const dateElement = document.getElementById('current-date');
+        const now = new Date();
+        const days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
+        const formattedDate = `Ngày ${now.getDate()} tháng ${now.getMonth() + 1} năm ${now.getFullYear()}`;
+        dateElement.innerText = formattedDate;
+    </script>
+</body>
+</html>
