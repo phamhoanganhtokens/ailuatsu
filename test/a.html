@@ -1,1 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Luật Sư | Cổng Thông Tin Tư Vấn Pháp Lý Cao Cấp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+        :root {
+            --legal-navy: #1a2a40;
+            --legal-gold: #c5a059;
+            --legal-paper: #fdfdfb;
+            --legal-grey: #4a5568;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: var(--legal-paper);
+            color: var(--legal-navy);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .justified-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .legal-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .legal-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-color: var(--legal-gold);
+            transform: translateY(-2px);
+        }
+
+        .gold-border-bottom {
+            border-bottom: 2px solid var(--legal-gold);
+        }
+
+        .copy-btn {
+            transition: all 0.2s ease;
+            background-color: var(--legal-navy);
+            color: white;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--legal-gold);
+            color: white;
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--legal-navy);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            display: none;
+            z-index: 1000;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--legal-navy);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--legal-gold);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="py-12 px-6 border-b border-gray-200 bg-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="serif-display text-4xl md:text-5xl font-bold tracking-tight mb-2 uppercase tracking-widest text-[#1a2a40]">AI LUẬT SƯ</h1>
+            <div class="h-1 w-24 bg-[#c5a059] mx-auto mb-4"></div>
+            <p class="text-sm tracking-widest text-gray-500 mb-2">WWW.PHAMHOANGANHTOKENS.COM</p>
+            <p id="current-date" class="text-xs italic text-gray-400"></p>
+        </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section class="max-w-4xl mx-auto py-16 px-6 text-center">
+        <h2 class="serif-display text-3xl mb-6 text-[#1a2a40]">Trợ Lý Pháp Lý Kỹ Thuật Số Của Bạn</h2>
+        <div class="justified-text text-lg text-gray-700 mx-auto max-w-2xl leading-relaxed">
+            Chào mừng quý khách đến với <span class="font-bold">AI Luật Sư</span>. Chúng tôi cung cấp giải pháp tư vấn pháp lý thông minh, giúp kết nối tri thức luật pháp với nhu cầu thực tiễn của người dân. Với sứ mệnh mang lại sự minh bạch và công bằng, hệ thống của chúng tôi được thiết kế để hỗ trợ quý khách chuẩn bị lộ trình pháp lý một cách chuyên nghiệp, ấm áp và đầy trách nhiệm. Dưới đây là các kịch bản mẫu hỗ trợ tư vấn dựa trên quy định pháp luật hiện hành.
+        </div>
+    </section>
+
+    <!-- Scenario Grid -->
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="legal-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest bg-[#f3f4f6] text-[#1a2a40] border-l-4 border-[#c5a059]">
+                        Luật Đất đai
+                    </div>
+                    <h3 class="serif-display text-xl mb-4 font-bold">Hợp thức hóa đất khai hoang</h3>
+                    <div class="justified-text text-gray-700 mb-6 italic border-l-2 border-gray-100 pl-4">
+                        "Gia đình tôi đang sử dụng một mảnh đất khai hoang từ năm 1995 nhưng chưa được cấp giấy chứng nhận quyền sử dụng đất. Hiện nay, chúng tôi mong muốn được hướng dẫn về quy trình và các điều kiện cụ thể để hợp thức hóa giấy tờ cho mảnh đất này theo quy định pháp luật hiện hành."
+                    </div>
+                    <div class="space-y-3">
+                        <p class="font-bold text-sm uppercase text-[#c5a059]">Hồ sơ hỗ trợ cần thiết:</p>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li class="flex items-start"><span class="mr-2">⚖️</span> Đơn đăng ký cấp giấy chứng nhận quyền sử dụng đất theo mẫu.</li>
+                            <li class="flex items-start"><span class="mr-2">⚖️</span> Giấy xác nhận của UBND cấp xã về nguồn gốc, thời điểm sử dụng và tình trạng tranh chấp.</li>
+                            <li class="flex items-start"><span class="mr-2">⚖️</span> Bản đồ trích đo địa chính thửa đất.</li>
+                            <li class="flex items-start"><span class="mr-2">⚖️</span> Hóa đơn hoặc biên lai nộp thuế đất hàng năm.</li>
+                            <li class="flex items-start"><span class="mr-2">⚖️</span> Bản sao CCCD của người đứng tên.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="copyContent(this)" data-content="Lĩnh vực: Luật Đất đai. Câu hỏi: Gia đình tôi đang sử dụng một mảnh đất khai hoang từ năm 1995... Hồ sơ: Đơn đăng ký, Giấy xác nhận UBND, Bản đồ trích đo, Biên lai thuế, CCCD." class="copy-btn px-6 py-2 text-xs font-bold uppercase tracking-widest rounded shadow-sm">
+                        📋 Copy toàn bộ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="legal-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest bg-[#f3f4f6] text-[#1a2a40] border-l-4 border-[#c5a059]">
+                        Luật Lao động
+                    </div>
+                    <h3 class="serif-display text-xl mb-4 font-bold">Chấm dứt hợp đồng trái luật</h3>
+                    <div class="justified-text text-gray-700 mb-6 italic border-l-2 border-gray-100 pl-4">
+                        "Tôi đã làm việc tại công ty được hơn 5 năm với hợp đồng không xác định thời hạn. Vừa qua, công ty thông báo đơn phương chấm dứt hợp đồng lao động nhưng không thực hiện đúng thời hạn báo trước. Tôi cần biết mình có thể yêu cầu những khoản bồi thường nào?"
+                    </div>
+                    <div class="space-y-3">
+                        <p class="font-bold text-sm uppercase text-[#c5a059]">Hồ sơ hỗ trợ cần thiết:</p>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li class="flex items-start"><span class="mr-2">💼</span> Hợp đồng lao động bản gốc đã ký kết.</li>
+                            <li class="flex items-start"><span class="mr-2">💼</span> Quyết định thôi việc hoặc thông báo từ phía công ty.</li>
+                            <li class="flex items-start"><span class="mr-2">💼</span> Bảng lương hoặc sao kê tài khoản ngân hàng 06 tháng gần nhất.</li>
+                            <li class="flex items-start"><span class="mr-2">💼</span> Sổ bảo hiểm xã hội.</li>
+                            <li class="flex items-start"><span class="mr-2">💼</span> Văn bản, email trao đổi liên quan đến việc chấm dứt công việc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="copyContent(this)" data-content="Lĩnh vực: Luật Lao động. Câu hỏi: Tôi đã làm việc tại công ty hơn 5 năm... Hồ sơ: Hợp đồng lao động, Quyết định thôi việc, Bảng lương, Sổ BHXH, Email trao đổi." class="copy-btn px-6 py-2 text-xs font-bold uppercase tracking-widest rounded shadow-sm">
+                        📋 Copy toàn bộ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="legal-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest bg-[#f3f4f6] text-[#1a2a40] border-l-4 border-[#c5a059]">
+                        Luật Dân sự
+                    </div>
+                    <h3 class="serif-display text-xl mb-4 font-bold">Khởi kiện đòi nợ dân sự</h3>
+                    <div class="justified-text text-gray-700 mb-6 italic border-l-2 border-gray-100 pl-4">
+                        "Tôi cho người quen vay tiền có hợp đồng viết tay và người làm chứng. Tuy nhiên quá hạn đã lâu người này vẫn trốn tránh nghĩa vụ trả nợ. Tôi cần chuẩn bị những thủ tục pháp lý nào để có thể khởi kiện đòi lại tài sản hiệu quả nhất?"
+                    </div>
+                    <div class="space-y-3">
+                        <p class="font-bold text-sm uppercase text-[#c5a059]">Hồ sơ hỗ trợ cần thiết:</p>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li class="flex items-start"><span class="mr-2">📜</span> Hợp đồng vay mượn hoặc giấy biên nhận có chữ ký.</li>
+                            <li class="flex items-start"><span class="mr-2">📜</span> Chứng từ chuyển khoản hoặc xác nhận giao nhận tiền.</li>
+                            <li class="flex items-start"><span class="mr-2">📜</span> Thông tin nhân thân và cư trú của bên vay.</li>
+                            <li class="flex items-start"><span class="mr-2">📜</span> Tin nhắn, email hoặc ghi âm nhắc nợ.</li>
+                            <li class="flex items-start"><span class="mr-2">📜</span> Đơn khởi kiện dân sự theo mẫu.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="copyContent(this)" data-content="Lĩnh vực: Luật Dân sự. Câu hỏi: Tôi cho người quen vay tiền... Hồ sơ: Giấy biên nhận, Chứng từ ngân hàng, Thông tin bên vay, Tin nhắn nhắc nợ, Đơn khởi kiện." class="copy-btn px-6 py-2 text-xs font-bold uppercase tracking-widest rounded shadow-sm">
+                        📋 Copy toàn bộ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="legal-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest bg-[#f3f4f6] text-[#1a2a40] border-l-4 border-[#c5a059]">
+                        Luật Hôn nhân & Gia đình
+                    </div>
+                    <h3 class="serif-display text-xl mb-4 font-bold">Thuận tình ly hôn & Phân chia tài sản</h3>
+                    <div class="justified-text text-gray-700 mb-6 italic border-l-2 border-gray-100 pl-4">
+                        "Vợ chồng tôi thuận tình ly hôn nhưng gặp khó khăn khi phân chia căn nhà chung và quyền nuôi con 4 tuổi. Chúng tôi cần tư vấn về phương án phân chia tài sản công bằng và đảm bảo lợi ích tốt nhất cho sự phát triển của trẻ."
+                    </div>
+                    <div class="space-y-3">
+                        <p class="font-bold text-sm uppercase text-[#c5a059]">Hồ sơ hỗ trợ cần thiết:</p>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li class="flex items-start"><span class="mr-2">🏠</span> Bản chính giấy chứng nhận đăng ký kết hôn.</li>
+                            <li class="flex items-start"><span class="mr-2">🏠</span> Bản sao giấy khai sinh của các con.</li>
+                            <li class="flex items-start"><span class="mr-2">🏠</span> Giấy chứng nhận quyền sử dụng đất và sở hữu nhà ở.</li>
+                            <li class="flex items-start"><span class="mr-2">🏠</span> Tài liệu chứng minh thu nhập và điều kiện sinh hoạt.</li>
+                            <li class="flex items-start"><span class="mr-2">🏠</span> Đơn yêu cầu công nhận thuận tình ly hôn.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="copyContent(this)" data-content="Lĩnh vực: Luật Hôn nhân & Gia đình. Câu hỏi: Vợ chồng tôi thuận tình ly hôn... Hồ sơ: Giấy kết hôn, Khai sinh con, Sổ đỏ, Chứng minh thu nhập, Đơn ly hôn." class="copy-btn px-6 py-2 text-xs font-bold uppercase tracking-widest rounded shadow-sm">
+                        📋 Copy toàn bộ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5 (Full width on large screens) -->
+            <div class="legal-card p-8 flex flex-col justify-between md:col-span-2">
+                <div>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest bg-[#f3f4f6] text-[#1a2a40] border-l-4 border-[#c5a059]">
+                        Luật Thừa kế
+                    </div>
+                    <h3 class="serif-display text-xl mb-4 font-bold">Khai nhận di sản không di chúc</h3>
+                    <div class="justified-text text-gray-700 mb-6 italic border-l-2 border-gray-100 pl-4">
+                        "Cha tôi qua đời đột ngột không để lại di chúc. Gia đình muốn thực hiện thủ tục khai nhận di sản là nhà và tiền tiết kiệm để sang tên cho mẹ tôi quản lý. Xin hướng dẫn trình tự thủ tục tại văn phòng công chứng và các bước đăng ký biến động tài sản."
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <p class="font-bold text-sm uppercase text-[#c5a059]">Hồ sơ hỗ trợ cần thiết:</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li class="flex items-start"><span class="mr-2">📜</span> Giấy chứng tử của người để lại di sản.</li>
+                                <li class="flex items-start"><span class="mr-2">📜</span> Giấy tờ chứng minh quan hệ nhân thân (khai sinh, kết hôn).</li>
+                                <li class="flex items-start"><span class="mr-2">📜</span> Giấy chứng nhận quyền sở hữu nhà đất & sổ tiết kiệm.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-3 pt-0 md:pt-8">
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li class="flex items-start"><span class="mr-2">📜</span> Bản sao CCCD của tất cả hàng thừa kế thứ nhất.</li>
+                                <li class="flex items-start"><span class="mr-2">📜</span> Dự thảo văn bản thỏa thuận phân chia di sản thừa kế.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="copyContent(this)" data-content="Lĩnh vực: Luật Thừa kế. Câu hỏi: Cha tôi qua đời không di chúc... Hồ sơ: Giấy chứng tử, Giấy tờ nhân thân, Sổ đỏ, Sổ tiết kiệm, CCCD thừa kế, Dự thảo thỏa thuận." class="copy-btn px-6 py-2 text-xs font-bold uppercase tracking-widest rounded shadow-sm">
+                        📋 Copy toàn bộ
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="bg-[#1a2a40] py-20 px-6 text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="serif-display text-3xl mb-6">Bạn cần sự hỗ trợ chuyên sâu hơn?</h2>
+            <p class="text-gray-300 mb-8 justified-text md:text-center">Hệ thống AI Luật Sư luôn sẵn sàng đồng hành cùng bạn trong mọi vấn đề pháp lý phức tạp. Hãy sử dụng thông tin trên để chuẩn bị tốt nhất cho buổi làm việc chuyên môn với luật sư hoặc cơ quan nhà nước.</p>
+            <a href="www.phamhoanganhtokens.com" class="inline-block border border-[#c5a059] text-[#c5a059] px-10 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#c5a059] hover:text-[#1a2a40] transition-colors duration-300">
+                Truy Cập Cổng Thông Tin
+            </a>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast serif-display">Nội dung đã được sao chép vào bộ nhớ tạm.</div>
+
+    <script>
+        // Update current date in Vietnamese format
+        const dateEl = document.getElementById('current-date');
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateEl.textContent = now.toLocaleDateString('vi-VN', options).toUpperCase();
+
+        // Copy function
+        function copyContent(btn) {
+            const content = btn.getAttribute('data-content');
+            navigator.clipboard.writeText(content).then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                
+                // Animate toast
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 3000);
+
+                // Feedback on button
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✓ Đã sao chép';
+                btn.style.backgroundColor = '#c5a059';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.backgroundColor = '#1a2a40';
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
