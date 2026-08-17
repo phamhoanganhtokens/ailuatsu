@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Tư Vấn Pháp Luật | AI Luật Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Merriweather', 'serif'],
+                        'body': ['PT Serif', 'serif'],
+                    },
+                    colors: {
+                        'legal-navy': '#1a237e',
+                        'legal-gold': '#b8860b',
+                        'paper-bg': '#ffffff',
+                        'page-bg': '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'PT Serif', serif; }
+        .legal-document { box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        .justify-text { text-align: justify; }
+        .section-heading { font-family: 'Merriweather', serif; }
+        @media print {
+            body { background: white; }
+            .legal-document { box-shadow: none; }
+        }
+    </style>
+</head>
+<body class="bg-page-bg py-10 px-4">
 
+    <article class="legal-document bg-paper-bg max-w-[900px] mx-auto p-10 md:p-16 min-h-[1100px]">
+        <!-- Header -->
+        <header class="flex justify-between items-start border-b-2 border-legal-navy pb-8 mb-10">
+            <div>
+                <h1 class="text-3xl font-bold text-legal-navy uppercase tracking-tight">AI LUẬT SƯ</h1>
+                <p class="text-sm text-gray-600 mt-1">Dịch vụ Tư vấn Pháp lý Chuyên nghiệp</p>
+            </div>
+            <div class="text-right text-sm text-gray-700">
+                <p>www.phamhoanganhtokens.com</p>
+                <p id="current-date"></p>
+                <script>
+                    document.getElementById('current-date').innerText = new Date().toLocaleDateString('vi-VN');
+                </script>
+            </div>
+        </header>
+
+        <!-- Main Title -->
+        <h1 class="text-2xl font-bold text-center text-legal-navy uppercase mb-12">THƯ TƯ VẤN PHÁP LUẬT</h1>
+
+        <!-- Content -->
+        <div class="space-y-8 text-gray-900 leading-relaxed text-lg">
+            <section>
+                <p class="font-bold">Kính gửi: Quý khách hàng</p>
+                <p>Về việc: Thủ tục thừa kế căn nhà theo di chúc khi có 8 người con ruột</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-legal-navy mb-4 section-heading">1. Tóm tắt vấn đề</h2>
+                <p class="justify-text">Vụ việc liên quan đến di sản thừa kế là một căn nhà do người quá cố để lại. Theo thông tin cung cấp, người mất có 8 người con ruột và đã lập di chúc để lại toàn bộ căn nhà cho 1 trong 8 người con. Yêu cầu đặt ra là phân tích tính hợp pháp của di chúc, quyền lợi của những người con còn lại và trình tự thủ tục thực hiện.</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-legal-navy mb-4 section-heading">2. Cơ sở pháp lý</h2>
+                <ul class="list-decimal list-inside space-y-2">
+                    <li>Bộ luật Dân sự 2015;</li>
+                    <li>Luật Công chứng 2014;</li>
+                    <li>Nghị định 23/2015/NĐ-CP về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-legal-navy mb-4 section-heading">3. Phân tích chi tiết</h2>
+                <div class="space-y-4">
+                    <h3 class="font-bold">3.1. Tính hiệu lực của di chúc</h3>
+                    <p class="justify-text">Để người con được chỉ định nhận trọn vẹn căn nhà, di chúc phải được coi là hợp pháp (Điều 630 BLDS 2015). Các điều kiện bao gồm: người lập di chúc minh mẫn, không bị lừa dối, cưỡng ép; nội dung không vi phạm điều cấm, không trái đạo đức.</p>
+
+                    <h3 class="font-bold">3.2. Quyền lợi của 7 người con còn lại</h3>
+                    <p class="justify-text">Theo Điều 644 BLDS 2015, dù di chúc chỉ định 1 người hưởng, những người sau đây vẫn có quyền hưởng di sản bằng 2/3 suất của một người thừa kế theo pháp luật (nếu được chia đều): Con chưa thành niên (dưới 18 tuổi) hoặc Con đã thành niên nhưng mất khả năng lao động.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-legal-navy mb-4 section-heading">4. Rủi ro pháp lý & Biện pháp xử lý</h2>
+                <div class="space-y-4">
+                    <div class="p-4 border-l-4 border-red-600 bg-red-50">
+                        <p class="text-red-800 font-semibold italic">Rủi ro: Tranh chấp thừa kế</p>
+                        <p class="justify-text text-sm">Nếu các đồng thừa kế cho rằng di chúc giả mạo hoặc người mất bị cưỡng ép, họ có quyền khởi kiện yêu cầu tuyên di chúc vô hiệu. Ngoài ra, cần xác minh căn nhà có phải tài sản chung hay không.</p>
+                    </div>
+                    <div class="p-4 border-l-4 border-green-600 bg-green-50">
+                        <p class="text-green-800 font-semibold italic">Biện pháp: Hòa giải và Xác thực</p>
+                        <p class="justify-text text-sm">Người con được hưởng di chúc nên chủ động thỏa thuận với các anh chị em còn lại. Cần kiểm tra tính xác thực của văn bản công chứng di chúc để đảm bảo giá trị pháp lý cao nhất.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-legal-navy mb-4 section-heading">5. Lưu ý quan trọng</h2>
+                <ul class="list-disc list-inside space-y-2 text-justify">
+                    <li><strong>Thuế và phí:</strong> Thừa kế giữa cha mẹ và con cái thuộc diện được miễn Thuế thu nhập cá nhân và Lệ phí trước bạ khi sang tên nhà đất.</li>
+                    <li><strong>Thời hiệu thừa kế:</strong> Thời hiệu để người thừa kế yêu cầu chia di sản là 30 năm đối với bất động sản kể từ thời điểm mở thừa kế.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Signature Block -->
+        <div class="mt-20 flex justify-end">
+            <div class="text-center">
+                <p>Trân trọng,</p>
+                <p class="font-bold text-legal-navy text-lg mt-2">AI Luật Sư</p>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="mt-16 pt-8 border-t border-gray-300 text-xs text-gray-500 text-center">
+            <p>Tài liệu này được soạn thảo bởi AI Luật Sư dựa trên dữ liệu cung cấp và chỉ mang tính chất tham khảo. Kết quả thực tế có thể thay đổi tùy thuộc vào hồ sơ gốc và quyết định của cơ quan thẩm quyền. Vui lòng liên hệ trực tiếp với Văn phòng Công chứng để xác thực hồ sơ.</p>
+        </div>
+    </article>
+
+</body>
+</html>
